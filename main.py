@@ -81,8 +81,30 @@ while (True):
         read_file_lines("clients.txt")
 
     elif choix == 3:
-        # Replace the pass instruction with your code
-        pass
+
+        print("Excel client and sales analysis")
+        print()
+        print("1) Show client")
+        print("2) Show sales")
+        print("3) Show Excel file clients and sales")
+        print("4) Quit")
+        print()
+
+        choix2 = int(input("Choose an option between 1 and 4: "))
+        print("----------------------------------------")
+
+        if choix2 == 1:
+            # Open the sheet "clients" of the clients_sales.xlsx file using Pandas and display the column of the clients
+            data_client = pd.read_excel("clients_sales.xlsx", "clients")
+            print(data_client)
+
+        elif choix2 == 2:
+            # Open the sheet "sales" of the clients_sales.xlsx file using Pandas and display the column of the sales
+            data_sales = pd.read_excel("clients_sales.xlsx", "sales")
+            print(data_sales)
+
+        elif choix2 == 3:
+            print("option 3 was chosen")
 
     elif choix == 5:
         print("Thanks for the excel and pyhton courses, best of luck with your second job :)")
