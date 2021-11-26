@@ -103,7 +103,8 @@ while (True):
                 data_sales = pd.read_excel("clients_sales.xlsx", "sales")
                 print(data_sales)
 
-            #Lea, choix==3 ne fontionne pas, ce qui est entre les ###
+            ### FONTIONNE PAS
+            
             ###
             elif choix2 == 3:
                 print()
